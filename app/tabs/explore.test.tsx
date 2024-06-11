@@ -1,9 +1,9 @@
 import { render, screen } from '@testing-library/react-native';
-import Explore from './explore';
+import TabTwoScreen from './explore';
 
 describe('Explore', () => {
   it('should display explore', () => {
-    render(<Explore />);
+    render(<TabTwoScreen />);
     expect(screen.getByText('Explore')).toBeDefined();
   });
 });
