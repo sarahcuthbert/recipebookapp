@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react-native';
 
-import HomeScreen from '.';
+import HomeScreen from '..';
 
 describe('Index', () => {
   it('should display hello world', () => {
