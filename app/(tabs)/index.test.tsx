@@ -1,4 +1,5 @@
 import { render, screen } from '@testing-library/react-native';
+
 import HomeScreen from '.';
 
 describe('Index', () => {

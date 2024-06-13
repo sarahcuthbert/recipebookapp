@@ -6,16 +6,25 @@
   "extends": [
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
-    "airbnb",
-    "prettier"
+    "prettier",
+    "plugin:testing-library/react",
+    "universe",
+    "universe/native",
+    "universe/web",
+    "universe/shared/typescript-analysis"
   ],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
     },
     "ecmaVersion": 12,
-    "sourceType": "module"
+    "sourceType": "module",
+    "project": "./tsconfig.json"
   },
   "plugins": ["react", "@typescript-eslint", "prettier"],
-  "rules": {}
+  "rules": {
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off"
+  },
+  "ignorePatterns": ["**/babel.config.js"]
 }
